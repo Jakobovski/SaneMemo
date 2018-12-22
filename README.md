@@ -24,9 +24,9 @@ groups new cards into sub-decks of a configurable size `default sub_deck_size=20
 
 #### Core Ideas
 Users is given three options to describe the difficulty of a card.
-- I KNOW IT
-- I KNOW IT BUT WILL FORGET
-- DON'T KNOW
+- "I KNOW IT"
+- "I KNOW IT BUT WILL FORGET"
+- "DON'T KNOW"
 
 These are roughly equivalent to easy, medium and hard. But are more intuitive, 
 and more accurately model the human learning process.
@@ -37,7 +37,7 @@ See code.py
 
         
 #### Inspiration
-    - SuperMemo2
-    - http://www.blueraja.com/blog/477/a-better-spaced-repetition-learning-algorithm-sm2
+- SuperMemo2
+- http://www.blueraja.com/blog/477/a-better-spaced-repetition-learning-algorithm-sm2
     
     
