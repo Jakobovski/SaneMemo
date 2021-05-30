@@ -46,7 +46,7 @@ class Card(object):
 
     def update(self, performance_str):
         """ Updates the card after the user has seen it and answered how difficult it was. The user can provide one of
-        three options: [I_KNOW, KNOW_BUT_WILL_FORGET, DONT_KNOW].
+        three options: [KNOW_IT, KNOW_BUT_WILL_FORGET, DONT_KNOW].
         """
 
         if performance_str == "KNOW_IT":
