@@ -73,6 +73,6 @@ class Card(object):
             self.next_practice_time = datetime.utc.now()
 
     def __cmp__(self, other):
-        """Comparator or sorting cards by next_practice_time"""
+        """Comparator for sorting cards by next_practice_time"""
         if hasattr(other, 'next_practice_time'):
             return self.number.__cmp__(other.next_practice_time)
