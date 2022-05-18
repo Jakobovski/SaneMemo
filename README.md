@@ -19,7 +19,7 @@ An open-source, well documented, spaced repetition algorithm.
 The use case of sub-decks is as follows. A user adds a large number of cards to 
 their deck (Ex: 100+) and now attempts to study. In order to facilitate efficient learning it
 is imperative to repeat the new cards with a frequency greater than 1/100. To solve this problem SaneMemo 
-groups new cards into sub-decks of a configurable size `default sub_deck_size=20`.
+groups new cards into sub-decks of a configurable size `default sub_deck_size=20`. Cards in a sub-deck are repeated more frequently, once the user indicates that they know the card it is removed from the sub-deck and replaced with a new card
 
 
 #### Core Ideas
