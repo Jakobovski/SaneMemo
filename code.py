@@ -10,6 +10,10 @@ CONSECUTIVE_CORRECT_TO_REMOVE_FROM_SUBDECK_WHEN_WILL_FORGET = 3
 SUBDECK_SIZE = 15
 REMINDER_RATE = 1.6
 
+KNOW_IT = "KNOW_IT"
+KNOW_BUT_WILL_FORGET = "KNOW_BUT_WILL_FORGET"
+DONT_KNOW = "DONT_KNOW"
+
 class Deck(object):
 
     def __init__(self):
@@ -49,7 +53,7 @@ class Card(object):
         three options: [KNOW_IT, KNOW_BUT_WILL_FORGET, DONT_KNOW].
         """
 
-        if performance_str == "KNOW_IT":
+        if performance_str == KNOW_IT:
             self.consecutive_correct_answer += 1
 
             if self.consecutive_correct_answer >= CONSECUTIVE_CORRECT_TO_REMOVE_FROM_SUBDECK_WHEN_KNOWN:
@@ -60,7 +64,7 @@ class Card(object):
             else:
                 self.next_practice_time = datetime.utc.now()
 
-        elif performance_str == "KNOW_BUT_WILL_FORGET":
+        elif performance_str == KNOW_BUT_WILL_FORGET:
             self.consecutive_correct_answer += 1
 
             if self.consecutive_correct_answer >= CONSECUTIVE_CORRECT_TO_REMOVE_FROM_SUBDECK_WHEN_WILL_FORGET:
@@ -68,7 +72,7 @@ class Card(object):
             else:
                 self.next_practice_time = datetime.utc.now()
 
-        elif performance_str == "DONT_KNOW":
+        elif performance_str == DONT_KNOW:
             self.consecutive_correct_answer = 0
             self.next_practice_time = datetime.utc.now()
 
